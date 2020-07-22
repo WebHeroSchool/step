@@ -1,22 +1,17 @@
 @font-face {
-	font-family: "GothamProBold";
-		src: 
-		   url("../fonts/GothamProBold/GothamProBold.eot");
-		src: 
-		   url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
-		   url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
-		   url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+	font-family: "GothamPro";
+	    src: 
+		   url("./fonts/GothamPro-Bold.woff2") format("woff2"),
+		   url("./fonts/GothamPro-Bold.woff") format("woff");
 	font-style: normal;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 @font-face {
-	font-family: "GothamProRegular";
+	font-family: "GothamPro";
 		src: 
-		   url("../fonts/GothamProRegular/GothamProRegular.eot");
-		src: 
-		   url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
-		   url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
-		   url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+		   url("./fonts/GothamPro.woff2") format("woff2"),
+		   url("./fonts/GothamPro.woff") format("woff");
 	font-style: normal;
+	font-weight: normal;
 }

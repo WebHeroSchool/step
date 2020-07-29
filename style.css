@@ -1,10 +1,90 @@
-body {
-background-color: grey;
-font-family: "GothamPro";
+ body {
+  background-color: grey;
+ }
+ /*header*/
+ }
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
 }
-
-.item__price {
-font-weight: bold;
+.header {
+  max-height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
+.header-menu
+.header-menu-right {
+  display: flex;
+  margin-top: 28px;
+  justify-content: space-between;
+}
+.header-menu__logo {
+  margin-top: 10px;
+  margin-right: 45px;
+}
+.header-menu__nav,
+.header-menu__right {
+  display: flex;
+  align-items: center;
+  justify-content: uppercase;
+}
+.header-menu__nav-link, 
+.header-menu__right-link {
+  font-size: 12px;
+  line-height: 11px;
+  display: flex;
+  font-style: bold;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+  margin-right: 35px;
+}
+.header-menu__nav-link:hover {
+  text-decoration: underline;
+}
+.header-menu__right-link:hover {
+  text-decoration: underline;
+}
+.header__form {
+  position: absolute;
+  padding-right: 20px;
+  border: 1px solid #000;
+  margin-top: 28px;
+  margin-left: 14px;
+  text-decoration: none;
+}
+.header__input {
+  border: none;
+  outline: none;
+}
+.header__bottom {
+  position: absolute;
+  width: 160px;
+  height: 0px;
+}
+.header__bottom:hover {
+  cursor: pointer;
+}
+.header__search {
+  position: absolute;
+  width: 12px;
+  height: 14px;
+}
+.header-menu__link-cart, 
+.header-menu__link-ellipse {
+  vertical-align: middle;
+}
+.header-menu__link-flag {
+  position: absolute;
+  width: 18px;
+  height: 20px;
+  
+}
+.header-menu__moblogo {
+  display: none;
+}
+.header__burger-wrap {
+  display: none;
 
- 

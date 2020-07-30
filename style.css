@@ -1,5 +1,6 @@
  body {
   background-color: grey;
+  box-sizing: border-box;
  }
  /*header*/
  }
@@ -13,33 +14,34 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  position: fixed;
+  font-weight: 700;
 }
 .header-menu
 .header-menu-right {
   display: flex;
-  margin-top: 28px;
   justify-content: space-between;
+  margin-top: 28px;
 }
 .header-menu__logo {
   margin-top: 10px;
   margin-right: 45px;
-}
+ }
 .header-menu__nav,
 .header-menu__right {
   display: flex;
   align-items: center;
-  justify-content: uppercase;
+  justify-content: center;
 }
 .header-menu__nav-link, 
 .header-menu__right-link {
   font-size: 12px;
   line-height: 11px;
-  display: flex;
-  font-style: bold;
   text-transform: uppercase;
   color: #000;
-  font-weight: 700;
+  align-items: center;
   margin-right: 35px;
+  
 }
 .header-menu__nav-link:hover {
   text-decoration: underline;
@@ -48,12 +50,10 @@
   text-decoration: underline;
 }
 .header__form {
-  position: absolute;
   padding-right: 20px;
-  border: 1px solid #000;
-  margin-top: 28px;
-  margin-left: 14px;
-  text-decoration: none;
+  border-bottom: 1px solid #000;
+  margin-left: calc(50% - 177.93px/2 + 199.45px);
+  position: inherit;
 }
 .header__input {
   border: none;
@@ -61,8 +61,6 @@
 }
 .header__bottom {
   position: absolute;
-  width: 160px;
-  height: 0px;
 }
 .header__bottom:hover {
   cursor: pointer;
@@ -76,15 +74,13 @@
 .header-menu__link-ellipse {
   vertical-align: middle;
 }
-.header-menu__link-flag {
-  position: absolute;
-  width: 18px;
-  height: 20px;
-  
-}
 .header-menu__moblogo {
   display: none;
 }
 .header__burger-wrap {
   display: none;
+}
+.header-menu__link-flag {
+ left: calc(50% - 20px/2 + 505px); 
+}
 

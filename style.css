@@ -1,15 +1,14 @@
- * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Gotham Pro';
-  background-color: grey;
-}
+ }
 .body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  align-content: center;
 }
 .container {
   max-width: 1030px;
-  margin: 0 auto;
+  margin-left: 0;
+  
 }
 /*header*/
 .header {
@@ -26,8 +25,10 @@
   justify-content: space-between;
 }
 .header-menu__logo {
-  margin-top: 32px;
-  margin-left: 35px;
+  width: 55px;
+  height: 55px;
+  margin-right: 45px;
+  margin-top: 10px;
  }
 .header-menu__nav,
 .header-menu__right {
@@ -70,16 +71,14 @@
   display: none;
 }
 
-.content  {
+.content {
   display: block;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1030px;
   height: 280px;
   background: url(./images/potter.png);
-  margin-left: 70px;
+  margin-left: 0;
   position: relative;
-  text-align: center;
-
 }
 .content__block {
   display: flex;
@@ -89,7 +88,7 @@
   padding-top: 78px;
   justify-content: center;
   align-items: flex-start;
-}
+  }
 .content__title {
   font-size: 30px;
   font-weight: bold;
@@ -98,16 +97,69 @@
   color: #fff;
   text-align: left;
   padding-bottom: 14px;
-  position: absolute;
+  position: relative;
 }
-.content__push {
+.content__link {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   width: 72px;
   text-decoration: none;
-  color: #fff;
+  color: #fff; 
+  
 }
-.content__push:hover {
+.content__link:hover {
   text-decoration: underline;
  }
+.product {
+  margin: 0 auto 52px auto;
+}
+ .product__title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+ }
+.product__wrapper {
+  display: block;
+  position: relative;
+  width: 208px;
+  height: 261px;
+}
+.product-wrapper__img {
+  width: 170px;
+  height: 173px;
+  margin-bottom: 18px;
+  padding-left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-wrapper__name {
+  font-size: 12px;
+  line-height: 11px;
+  text-align: left;
+  margin-bottom: 10px;
+  padding-left: 11px;
+}
+.product-wrapper__description {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-left: 11px;
+}
+.product-wrapper__price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 13px;
+  text-align: left;
+}
+.product-wrapper__button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

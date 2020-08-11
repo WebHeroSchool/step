@@ -1,4 +1,3 @@
- }
 .body {
   box-sizing: border-box;
   margin: 0;
@@ -9,12 +8,13 @@
   max-width: 1030px;
   margin-left: 0;
 }
-/*header*/
 .header {
   max-height: 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 .header-menu,
@@ -75,15 +75,15 @@
   max-width: 1030px;
   height: 280px;
   background: url(./images/potter.png);
-  margin-left: 0;
   position: relative;
+  margin: 0 auto 67px auto;
 }
 .content__block {
   display: flex;
   flex-direction: column;
   width: 209px;
   padding-left: 54px;
-  padding-top: 78px;
+  padding-top: 82px;
   justify-content: center;
   align-items: flex-start;
 }
@@ -94,22 +94,28 @@
   text-transform: uppercase;
   color: #fff;
   text-align: left;
-  padding-bottom: 14px;
   position: relative;
 }
-.content__link {
+.content__block-link {
+  justify-content: flex-start;
+}
+.link__jump {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 72px;
+  width: 78px;
   text-decoration: none;
   color: #fff; 
+  position: relative;
 }
-.content__link:hover {
-  text-decoration: underline;
- }
+.content__arrow {
+  padding-left: 7px;
+  width: 45px;
+  display: inline-block;
+}
 .product {
-  margin: 0 auto 52px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
  .product__title {
   font-size: 22px;
@@ -124,6 +130,7 @@
   position: relative;
   width: 208px;
   height: 261px;
+  flex-direction: row;
 }
 .product-wrapper__img {
   width: 170px;
@@ -144,8 +151,7 @@
 .product-wrapper__description {
   display: grid;
   border: none;
-  
-}
+ }
 .product-wrapper__price {
   display: flex;
   align-items: center;
@@ -215,11 +221,26 @@
   height: 9px;
   width: 9px;   
 }
-..product-wrapper__brown:active {
+.product-wrapper__brown:active {
   height: 9px;
   width: 9px; 
 }
 .product-wrapper__lightblue:active {
   height: 9px;
   width: 9px; 
+}
+.history {
+  background-color: #000;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-bottom: 95px;
+  justify-content: space-around;
+  height: 442px;
+  width: 100%;
+}
+.history__img {
+  width: 563px;
+  height: 309px;
+  margin-left: 38px; 
 }
